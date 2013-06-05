@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>HTML</title>
+	<style>
+	
+	section{
+		background-color: #eee;
+		margin-bottom: 10px;
+		color: #fff;
+  	    font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  	    width: 500px;
+	}
+	
+	*, *:after, *:before{
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	
+	section > div{
+		padding: 20px;
+		text-align: center;
+		width: 250px;
+	}
+	
+	section label{
+		font-size: 16px;
+		color: #555;
+		display: block;
+		margin-bottom: 10px;
+	}
+	
+	section p{
+		background-color: #ccc;
+		height: 150px;
+		margin: 0;
+		font-size: 24px;
+		padding-top: 60px;
+	}
+	
+	.countries, .athletes{
+		float: left;
+		
+	}
+	
+	.countries p{
+		background-color: orange;		
+	}
+	
+	.athletes p{
+		background-color: royalblue;		
+	}
+	
+	
+
+	.clearfix:after {
+	    content: ".";
+	    display: block;
+	    height: 0;
+	    clear: both;
+	    visibility: hidden;
+	}
+	
+	</style>
+</head>
+<body>
+	
+<section class="clearfix">	
+	
+	<div class="countries">
+		<label>N. of Countries</label>
+		<p>205</p>
+	</div>
+	
+	
+	<div class="athletes">
+		<label>N. of Athletes</label>
+		<p>10422</p>
+	</div>	
+	
+	
+</section>
+
+	
+</body>
+</html>

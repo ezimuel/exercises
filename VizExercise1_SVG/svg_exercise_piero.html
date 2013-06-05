@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>SVG</title>
+
+	<style>
+	svg text{
+		font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	}
+	</style>
+</head>
+	<body>
+		<svg width="800" height="800">
+			<rect height="800" width="800" fill="#eee"></rect>
+			<g>
+				<text y="20" x="125" dy="1em" style="text-anchor: middle;">N. of Countries</text>
+				<rect y="60" x="20" width="210" height="150" fill="orange"></rect>
+				<text y="115" x="125" fill="white" dy="1em" style="font-size: 24px; text-anchor: middle;">205</text>
+			</g>
+
+			<g transform="translate(250, 0)">
+				<text y="20" x="125" dy="1em" style="text-anchor: middle;">N. of Athletes</text>
+				<rect y="60" x="20" width="210" height="150" fill="blue"></rect>
+				<text y="115" x="125" fill="white" dy="1em" style="font-size: 24px; text-anchor: middle;">10472</text>
+			</g>
+
+			<circle cx="250" cy="250" r="10" fill="white" stroke="black" stroke-width="2"></circle>
+
+			<g transform="translate(0, 250)">
+				<text y="20" x="125" dy="1em" style="text-anchor: middle;">N. of Medals</text>
+				<rect y="60" x="20" width="210" height="150" fill="green"></rect>
+				<text y="115" x="125" fill="white" dy="1em" style="font-size: 24px; font-style: italics; text-anchor: middle;">859</text>
+			</g>
+
+			<g transform="translate(250, 250), scale(2)">
+				<text y="20" x="125" dy="1em" style="text-anchor: middle;">N. of Stadiums</text>
+				<rect y="60" x="20" width="210" height="150" fill="red"></rect>
+				<text y="115" x="125" fill="white" dy="1em" style="font-size: 24px; font-weight: bold; text-anchor: middle;" transform="rotate(180 113, 125)">22</text>
+			</g>
+		</svg>
+	</body>
+</html>

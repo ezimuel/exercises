@@ -1,0 +1,79 @@
+<html>
+<head>
+	<title>Peretti Ex3</title>
+	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	<style>
+	body{
+		font-family: "Helvetica", Arial, Geneva, sans-serif;
+	}
+	</style>
+</head>
+<body>
+	
+	<svg></svg>
+
+	<script>
+		console.log("Version: " + d3.version)
+		var svg = d3.select("svg")
+		svg.attr('width', 500)
+		svg.attr('height', 240)
+		
+		var content = svg.append("rect")
+		content.attr("width", 500)
+		content.attr("height", 240)
+		content.style("fill", "#eee")
+
+			var group1 = svg.append("g")
+			
+				var text1 = group1.append("text")
+				text1.attr('y', 20)
+				text1.attr('x', 125)
+				text1.attr('dy', "1em")
+				text1.style("text-anchor", "middle")
+				text1.text("N. Of Countries")
+
+				var rect1 = group1.append("rect")
+				rect1.attr('y', 60)
+				rect1.attr('x', 20)
+				rect1.attr('width', 210)
+				rect1.attr('height', 150)
+				rect1.style('fill', 'orange')
+				
+				var text2 = group1.append("text")
+				text2.attr('y', 115)
+				text2.attr('x', 125)
+				text2.attr('dy', "1em")
+				text2.style("text-anchor", "middle")
+				text2.style("font-size", "24px")
+				text2.style("fill", "white")
+				text2.text("205")
+				
+			var group2 = svg.append("g")
+			group2.attr("transform", "translate(250, 0)")
+			
+				var text1 = group2.append("text")
+				text1.attr('y', 20)
+				text1.attr('x', 125)
+				text1.attr('dy', "1em")
+				text1.style("text-anchor", "middle")
+				text1.text("N. Of Athletes")
+
+				var rect1 = group2.append("rect")
+				rect1.attr('y', 60)
+				rect1.attr('x', 20)
+				rect1.attr('width', 210)
+				rect1.attr('height', 150)
+				rect1.style('fill', 'blue')
+				
+				var text2 = group2.append("text")
+				text2.attr('y', 115)
+				text2.attr('x', 125)
+				text2.attr('dy', "1em")
+				text2.style("text-anchor", "middle")
+				text2.style("font-size", "24px")
+				text2.style("fill", "white")
+				text2.text("10098")
+				
+	</script>
+</body>
+</html>

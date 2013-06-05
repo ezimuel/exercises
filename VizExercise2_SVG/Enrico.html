@@ -1,0 +1,66 @@
+<html>
+<head>
+	<title>BigDive2 - Exercise 2</title>
+	<script src="js/d3.v3.min.js" charset="utf-8"></script>
+	<style type="text/css">
+		.label {
+			font-size: 20px;
+			font-align: center;
+		}
+		.data {
+			font-size: 24px;
+		}
+	</style>
+</head>
+<body>
+	<svg></svg>
+
+        <script>
+	        var svg = d3.select('svg')
+                            .attr('width', 800)
+                            .attr('height', 500)
+		
+		svg.append('rect')
+		   .attr('x', 10)
+		   .attr('y', 10)
+		   .attr('height', 350)
+		   .attr('width', 650)
+		   .style('stroke', '#eeeeee')
+		   .style('fill', '#eeeeee')
+
+		var myGroup = svg.append('g')
+		fillGroup(myGroup, 20, 100, '#FAB31B', 'N. of Countries', 205);
+
+		var myGroup2 = svg.append('g')
+				  .attr('transform', 'translate(330,0)')
+		fillGroup(myGroup2, 20, 100, '#0000ff', 'N. of Athletes', 10422);
+		
+		function fillGroup(myGroup, x, y, fill, label, value) {
+			
+			myGroup.append('rect')
+		       	       .attr('x', x)
+		               .attr('y', y)
+		               .attr('height', 250)
+		               .attr('width', 300)
+		               .style('stroke', fill)
+		               .style('fill', fill)
+
+			myGroup.append('text')
+		       	       .attr('class', 'label')
+		               .attr('x', x + 150)
+		               .attr('y', '60')
+		               .text(label)
+			       .style('text-anchor', 'middle')				
+ 
+
+			myGroup.append('text')
+		               .attr('class', 'data')
+		               .attr('x', x + 150)
+		               .attr('y', '240')
+		               .style('fill','white')
+		               .text(value)
+			       .style('text-anchor', 'middle')
+		}
+                </script>
+</body>
+</html>
